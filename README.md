@@ -52,7 +52,7 @@ This repository tracks notable **commercial managed cloud network firewall platf
 
 ## 🔓 Open-Source GitHub Firewall Projects
 
-*Open-source options, sorted by GitHub Star Count in descending order.*
+*Open-source options, sorted by GitHub Stars_Count in descending order.*
 
 | 🌟 Stars | 📦 Repository | 📜 License | 🎯 Highlights & Description |
 | :---: | :--- | :--- | :--- |
@@ -88,7 +88,7 @@ Thank you for exploring this curated repository! If you find this project helpfu
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add or edit** entries in `README.md` following the tabular markdown format.
-3. ℹ️ **Provide essential details**: name, repository/website link, 1–2 sentence description, license, pricing, or star count.
+3. ℹ️ **Provide essential details**: name, repository/website link, 1–2 sentence description, license, pricing, or Stars_Count.
 4. 🚀 **Submit a Pull Request (PR)** with a clear explanation of your additions.
 
 ---
