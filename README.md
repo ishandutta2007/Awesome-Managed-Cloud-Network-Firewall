@@ -1,6 +1,6 @@
 # 🛡️ Awesome Managed Cloud Network Firewall 🚀
 
-[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Managed-Cloud-Network-Firewall/pulls)
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Managed-Cloud-Network-Firewall/pulls) <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 ![Awesome Managed Cloud Network Firewall Banner](assets/banner.svg)
 
@@ -21,8 +21,10 @@ This repository tracks notable **commercial managed cloud network firewall platf
 ## 📑 Table of Contents
 - [📊 SaaS & Commercial Hosted Firewall Platforms](#-saas--commercial-hosted-firewall-platforms)
 - [🔓 Open-Source GitHub Firewall Projects](#-open-source-github-firewall-projects)
+- [💖 Support](#-support)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+- [⭐ Star History](#-star-history)
 
 ---
 
@@ -72,6 +74,16 @@ This repository tracks notable **commercial managed cloud network firewall platf
 
 ---
 
+## 💖 Support
+
+Thank you for exploring this curated repository! If you find this project helpful, please consider supporting it:
+- ⭐ **Star** this repository to show your appreciation and help others discover it.
+- 🍴 **Fork** and contribute your knowledge or submit improvements via Pull Requests.
+- 📢 **Share** this list with fellow network engineers, security architects, and cloud practitioners.
+- ☕ **Sponsor / Buy me a Coffee**: You can support ongoing maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
 ## 🤝 How to Contribute
 
 1. 🍴 **Fork** the repository.
@@ -87,6 +99,12 @@ This repository tracks notable **commercial managed cloud network firewall platf
 - 🛡️ Cloud network firewalls process sensitive production network traffic. Self-hosted and open-source solutions require proper security hardening, active patch management, and strict access controls.
 - ⚡ **eBPF firewalls performance**: eBPF/XDP throughput depends on rule lookup algorithms (hash-table vs linear search).
 - 🔐 **Management security**: Never expose firewall management consoles or admin interfaces directly to the public internet. Use secure VPNs, Zero-Trust Access, or SSH bastions.
+
+---
+
+## 🌟 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Managed-Cloud-Network-Firewall&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Managed-Cloud-Network-Firewall&type=date&legend=top-left)
 
 ---
 
