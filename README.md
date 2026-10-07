@@ -1,261 +1,96 @@
-# Awesome-Managed-Cloud-Network-Firewall
+# 🛡️ Awesome Managed Cloud Network Firewall 🚀
 
-## Top Managed Cloud Network Firewall Ecosystem
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Managed-Cloud-Network-Firewall/pulls)
 
+![Awesome Managed Cloud Network Firewall Banner](assets/banner.svg)
 
+## 📌 Top Managed Cloud Network Firewall Ecosystem & Open-Source Security Platforms
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+**Curated List of SaaS Products, Cloud-Native Firewalls, Self-Hosted NGFW & eBPF Security Engines**  
 
-*Focused on Cloud-Native Firewalls, Self-Hosted NGFW & Open-Source Security Platforms*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial managed cloud firewall platforms** and **open-source projects** that protect cloud workloads, VPCs, and hybrid networks — from fully managed cloud-native firewalls to self-hosted next-generation firewall distributions and eBPF-based packet filtering engines.
-
-
-
-**Examples** include AWS Network Firewall, Azure Firewall, Google Cloud Cloud Armor, Palo Alto VM-Series Cloud, Fortinet FortiGate-VM, Check Point CloudGuard, Cisco Secure Firewall, Cloudflare Magic Firewall, Sophos Cloud Firewall, and SonicWall NSv (the category leaders).
-
-
-
-**Open-source emphasis**: Managed cloud network firewall is a strong open-source domain. **OPNsense** and **pfSense** lead as the most widely deployed open-source firewall distributions, with **IPFire** providing a simpler, security-focused alternative. **fos1** brings Kubernetes-native firewall distribution on Talos Linux, **neuwerk** delivers cloud-native eBPF egress firewalling, and **Polycube** provides eBPF/XDP-based packet filtering with hash-table rule lookup for superior latency and throughput . **BunkerWeb** and **morfic** round out the ecosystem with Web Application Firewall and Kubernetes-native control plane capabilities . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AWS Network Firewall](https://aws.amazon.com/network-firewall/)**  
-
-  **AWS's managed network firewall** — VPC-level protection with stateful and stateless rule groups, Suricata-compatible IPS, and deep packet inspection . **Centralized deployment across VPCs via Transit Gateway** . **Best for AWS-native network security** .
-
-
-
-- **[Azure Firewall](https://azure.microsoft.com/en-us/products/azure-firewall/)**  
-
-  **Microsoft's cloud-native firewall** — stateful inspection with FQDN filtering, threat intelligence, and Azure Monitor integration . **Azure Firewall Premium** adds TLS inspection and IDPS . **Best for Azure-native network security** .
-
-
-
-- **[Google Cloud Cloud Armor](https://cloud.google.com/armor)**  
-
-  **Google's DDoS and WAF protection** — Layer 7 filtering with preconfigured WAF rules, rate limiting, and adaptive protection . **Best for GCP-native application protection** .
-
-
-
-- **[Palo Alto VM-Series Cloud](https://www.paloaltonetworks.com/)**  
-
-  **Virtual next-generation firewall** — App-ID, User-ID, and Content-ID with cloud-native scaling . **Best for Palo Alto-centric organizations** .
-
-
-
-- **[Fortinet FortiGate-VM](https://www.fortinet.com/)**  
-
-  **Virtual NGFW** — consolidated security with FortiOS and cloud integration . **Best for Fortinet ecosystem users** .
-
-
-
-- **[Check Point CloudGuard](https://www.checkpoint.com/)**  
-
-  **Cloud network security** — unified management with threat prevention . **Best for Check Point users** .
-
-
-
-- **[Cisco Secure Firewall](https://www.cisco.com/)**  
-
-  **Enterprise firewall with cloud deployment** — integrated with Cisco Security Cloud Control . **Best for Cisco-centric organizations** .
-
-
-
-- **[Cloudflare Magic Firewall](https://www.cloudflare.com/)**  
-
-  **Cloud edge firewall** — network-level filtering at Cloudflare's global edge . **Best for Cloudflare ecosystem users** .
-
-
-
-- **[Sophos Cloud Firewall](https://www.sophos.com/)**  
-
-  **Cloud-managed firewall** — synchronized security with Sophos Central . **Best for Sophos ecosystem** .
-
-
-
-- **[SonicWall NSv](https://www.sonicwall.com/)**  
-
-  **Virtual firewall** — NSv series for cloud and virtualized environments . **Best for SonicWall users** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Firewall Distributions
-
-
-
-- **[OPNsense](https://github.com/opnsense/core)**  
-
-  **The leading modern open-source firewall distribution**, BSD-2-Clause licensed with **5,000+ GitHub stars** . **FreeBSD-based with clean UI and regular six-month release cycles**  . **Integrates Suricata for inline intrusion detection**  . **ZFS boot environments for safe rollback** and **API-based automation**  . **Full firewall suite with VPN (WireGuard, OpenVPN, IPsec), traffic shaping, and NetFlow**  . **The modern alternative to pfSense with faster development pace** . **Best for cloud VMs and enterprise deployments** .
-
-
-
-- **[pfSense](https://github.com/pfsense/pfsense)**  
-
-  **The most widely deployed open-source firewall**, Apache-2.0 licensed with **3,000+ GitHub stars** . **FreeBSD-based with web GUI and stateful packet inspection**  . **Supports Snort and Suricata for IDS/IPS, IPsec, OpenVPN, and WireGuard**  . **Extremely mature with the largest community and extensive documentation**  . **pfSense Plus is closed source; CE receives features with delay**  . **Best for established deployments with predictable behavior** .
-
-
-
-- **[IPFire](https://github.com/ipfire/ipfire-2.x)**  
-
-  **Security-focused open-source firewall**, GPL-3.0 licensed . **Linux-based with color-coded zones (Green/Red/Blue/Orange)** for network segmentation  . **Lighter than pfSense and OPNsense, easier to harden**  . **Strong track record on security patch delivery** . **Built-in Pakfire package manager and QoS support**  . **Best for smaller teams and environments where simplicity matters** .
-
-
-
-### Cloud-Native Firewalls
-
-
-
-- **[neuwerk](https://github.com/moolen/neuwerk)**  
-
-  **Cloud-native eBPF network egress firewall**, MIT licensed . **Runs as central infrastructure on the network level** — no application changes required  . **Dynamic, DNS-based firewall for allow/deny egress traffic**  . **Raft-based cluster with NATS JetStream** for distributed state management  . **TLS bootstrap ceremony with leader election** . **Supports glob hostnames, CIDR allowlist, and audit mode**  . **Best for cloud-native egress control** .
-
-
-
-- **[fos1](https://github.com/GizmoTickler/fos1)**  
-
-  **Kubernetes-based router/firewall distribution on Talos Linux**, MIT licensed . **Immutable OS with Kubernetes orchestration and declarative infrastructure-as-code**  . **Full routing, NAT, DNS, DHCP, NTP, WireGuard, IDS, and DPI paths implemented** as of April 2026  . **eBPF-based packet processing with stateful filtering**  . **IDS/IPS via Suricata and network protocol analysis via Zeek**  . **Best for Kubernetes-native firewall deployments** .
-
-
-
-- **[morfic](https://github.com/fire833/morfic)**  
-
-  **Kubernetes-native firewall/routing control plane**, open-source  . **User/kernel space network control plane** . **Best for Kubernetes network control** .
-
-
-
-### eBPF & XDP Packet Filtering
-
-
-
-- **[Polycube](https://github.com/polycube-network/polycube)**  
-
-  **eBPF and XDP-based framework for network services**, Apache-2.0 licensed . **Provides tools for creating firewalls, bridges, and routers**  . **pcn-iptables** — drop-in iptables replacement using eBPF with hash-table rule lookup for stable latency and throughput as rules scale  . **Supports egress, stateful filtering, and full IPv4/IPv6 L4 protocol coverage**  . **Outperforms traditional iptables with large rulesets when implemented efficiently**  . **Best for high-performance packet filtering** .
-
-
-
-- **[xdp-filter](https://github.com/xdp-project/xdp-tools)**  
-
-  **XDP-based packet filtering from XDP project**, open-source . **Hash-table rule lookup with stable latency** — unlike XDP-Firewall's linear search  . **Supports TCP and UDP on both IPv4 and IPv6**  . **Best for stateless high-throughput filtering** .
-
-
-
-### Web Application Firewalls
-
-
-
-- **[BunkerWeb](https://github.com/bunkerity/bunkerweb)**  
-
-  **Cloud-native Web Application Firewall (WAF)**, AGPL-3.0 licensed with **8,000+ GitHub stars** . **NGINX-based with ModSecurity integration**  . **Multisite mode protects multiple applications from a single instance**  . **Autoconf for Docker and Kubernetes** — automatically reconfigures based on container labels or Ingress resources  . **Supports SQLite, MariaDB, MySQL, and PostgreSQL** for state storage  . **Best for web application protection in cloud-native environments** .
-
-
-
-- **[ModSecurity](https://github.com/owasp-modsecurity/ModSecurity)**  
-
-  **The most widely deployed open-source WAF engine**, Apache-2.0 licensed . **Runs as a module for Apache, Nginx, and IIS** — supports OWASP Core Rule Set (CRS) . **Best for traditional WAF deployments** .
-
-
-
-- **[OWASP Coraza](https://github.com/corazawaf/coraza)**  
-
-  **Modern open-source WAF written in Go**, Apache-2.0 licensed . **100% compatible with OWASP CRS v4** — 20-40% higher throughput than ModSecurity . **Best for Kubernetes/Envoy environments** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Untangle** — Linux-based NGFW with IDPS focus  .
-
-- **Smoothwall** — NAT mapping, IDPS, and multi-WAN support  .
-
-- **Zenarmor** — OPNsense plugin with DPI, application control, and TLS inspection  .
-
-- **VyOS** — Linux-based router/firewall OS with VLANs and VPN support  .
-
-- **OpenWrt** — Linux-based router OS with firewall capabilities  .
-
-- **metal-stack firewall-controller** — Kubernetes controller for bare-metal firewalls with nftables and Suricata  .
-
-- **cloud-snitch** — AWS activity map visualization and firewall inspired by Little Snitch  .
-
-
-
-**Frameworks for building custom cloud network firewall solutions**: Combine **OPNsense** or **pfSense** for proven firewall distributions deployable on cloud VMs . Use **neuwerk** for cloud-native eBPF egress firewalling with DNS-based policies  . Deploy **fos1** for Kubernetes-native firewall on Talos Linux with full routing and IDS/IPS  . Choose **Polycube** for high-performance eBPF packet filtering with hash-table rule lookup  . Integrate **BunkerWeb** for Web Application Firewall protection in cloud-native environments  . Use **ModSecurity** or **Coraza** for traditional WAF deployments . Note that true managed cloud firewalls with global infrastructure, automatic scaling, and vendor-supported SLAs (AWS Network Firewall, Azure Firewall, Palo Alto VM-Series) remain primarily commercial territory; open-source stacks provide strong firewall distributions, eBPF filtering, and WAF foundations that require integration for complete cloud network security.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Cloud network firewalls handle critical network traffic and security policies. Self-hosted solutions require proper security hardening, access controls, and compliance with data privacy regulations.
-
-- **Patch cadence is a security control** — unpatched firewall firmware is a high-value attack surface. Prefer platforms with active maintenance (OPNsense, pfSense, IPFire) over abandoned ones  .
-
-- **eBPF firewalls are not inherently superior** — their effectiveness depends on implementation. Hash-table rule lookup (Polycube pcn-iptables, xdp-filter) maintains stable latency as rules scale, while linear search (XDP-Firewall) degrades significantly  .
-
-- **Management interface exposure is a common misconfiguration** — never expose the firewall admin UI directly to the internet. Use VPN or bastion hosts for administrative access  .
-
-- **License considerations**: OPNsense uses BSD-2-Clause, pfSense uses Apache-2.0 (Plus is closed source), IPFire uses GPL-3.0, neuwerk uses MIT, and Polycube uses Apache-2.0. Verify licensing against your use case before committing .
-
-- The open-source ecosystem provides strong firewall distributions, eBPF filtering, and WAF foundations, but **global infrastructure, automatic scaling, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+*Comprehensive Guide to AWS Network Firewall, Azure Firewall, GCP Cloud Armor, OPNsense, pfSense, Suricata & Kubernetes Firewalls*
 
 ---
 
+### 💡 Overview & SEO Summary
 
+This repository tracks notable **commercial managed cloud network firewall platforms**, **SaaS WAFs**, and **open-source GitHub security projects** that safeguard modern cloud workloads, virtual private clouds (VPCs), hybrid networks, and Kubernetes clusters. From fully managed enterprise cloud-native firewalls to high-performance eBPF/XDP packet filtering engines and virtual Next-Generation Firewalls (NGFW), this guide provides clear insights into pricing, free tier limits, market capitalization, and open-source GitHub star metrics.
 
-**Made for network engineers, cloud architects, and organizations seeking cloud firewall sovereignty.**
+---
 
-Let's make managed cloud network firewalls more open, transparent, and secure.
+## 📑 Table of Contents
+- [📊 SaaS & Commercial Hosted Firewall Platforms](#-saas--commercial-hosted-firewall-platforms)
+- [🔓 Open-Source GitHub Firewall Projects](#-open-source-github-firewall-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 📊 SaaS & Commercial Hosted Firewall Platforms
+
+> **📈 Market Size & Industry Dynamics**:  
+> The global **Cloud Network Firewall market** is estimated at **$5.2 Billion in 2026** and is projected to reach **$12.8 Billion by 2031 (CAGR ~19.7%)**. The sector is **moderately fragmented**, dominated by hyperscale cloud service providers (AWS, Microsoft Azure, Google Cloud) for native VPC controls, alongside enterprise cybersecurity giants (Palo Alto Networks, Fortinet, Cisco, Check Point) providing multi-cloud virtual appliances, and edge security leaders (Cloudflare).
+
+*Note: Table sorted by Company Market Size / Revenue in descending order.*
+
+| 🛡️ Product / Platform | 🏢 Company | 💰 Company Size / Revenue (Est.) | 💵 Starting Tier Pricing | 🆓 Free Tier Limit / Free Trial | ⚡ Primary Use Case & Highlights |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Azure Firewall](https://azure.microsoft.com/en-us/products/azure-firewall/)** | Microsoft | **~$3.12 Trillion Valuation** | $1.25 per firewall hour + $0.016/GB processed | $200 free credit valid for 30 days | Cloud-native stateful inspection, TLS inspection & Azure IDPS |
+| **[AWS Network Firewall](https://aws.amazon.com/network-firewall/)** | Amazon | **~$2.18 Trillion Valuation** | $0.395 per firewall endpoint hour + $0.065/GB processed | Free tier available via AWS Free Account ($300 credits for 30 days) | VPC-level protection, Suricata-compatible IPS, Transit Gateway integration |
+| **[Google Cloud Cloud Armor](https://cloud.google.com/armor)** | Alphabet (Google) | **~$2.05 Trillion Valuation** | $0.75 per policy/month + $0.75 per rule/month ($0.05/10k requests) | $300 free trial credits for 90 days across GCP | GCP-native Layer 7 DDoS mitigation and adaptive WAF filtering |
+| **[Cisco Secure Firewall](https://www.cisco.com/)** | Cisco Systems | **~$195 Billion Market Cap** | ~$350/month per virtual instance (BYOL/PayG) | 30-day free evaluation trial | Enterprise NGFW with Cisco Security Cloud Control integration |
+| **[Palo Alto VM-Series Cloud](https://www.paloaltonetworks.com/)** | Palo Alto Networks | **~$110 Billion Market Cap** | ~$0.92 per hour (PAYG) or ~$2,800/year license | 30-day free trial on AWS/Azure Marketplaces | Virtual NGFW featuring App-ID, User-ID, and Content-ID |
+| **[Fortinet FortiGate-VM](https://www.fortinet.com/)** | Fortinet | **~$60 Billion Market Cap** | ~$0.85 per hour (PAYG 1 vCPU) or ~$1,200/year | 60-day free evaluation license | Virtual NGFW powered by FortiOS with unified cloud security |
+| **[Cloudflare Magic Firewall](https://www.cloudflare.com/)** | Cloudflare | **~$35 Billion Market Cap** | ~$200/month (Enterprise network addon packages) | Free tier available for Cloudflare Core (Magic Firewall requires Enterprise trial) | Cloud edge network-level packet filtering across global edge |
+| **[Check Point CloudGuard](https://www.checkpoint.com/)** | Check Point | **~$22 Billion Market Cap** | ~$0.70 per hour (PAYG vCPU) | 30-day free marketplace trial | Unified multi-cloud network security and threat prevention |
+| **[Sophos Cloud Firewall](https://www.sophos.com/)** | Sophos (Thoma Bravo) | **~$4 Billion Valuation** | ~$80/month per virtual firewall instance | 30-day free evaluation trial on Sophos Central | Cloud-managed firewall with synchronized security features |
+| **[SonicWall NSv](https://www.sonicwall.com/)** | SonicWall (Private) | **~$1.5 Billion Valuation** | ~$65/month per virtual instance (NSv 100) | 30-day free evaluation trial | Virtual firewall for virtualized environments & hybrid cloud |
+
+---
+
+## 🔓 Open-Source GitHub Firewall Projects
+
+*Open-source options, sorted by GitHub Star Count in descending order.*
+
+| 🌟 Stars | 📦 Repository | 📜 License | 🎯 Highlights & Description |
+| :---: | :--- | :--- | :--- |
+| [<img src="https://img.shields.io/github/stars/bunkerity/bunkerweb?style=social&color=white" alt="BunkerWeb Stars" />](https://github.com/bunkerity/bunkerweb/stargazers) | **[BunkerWeb](https://github.com/bunkerity/bunkerweb)** | AGPL-3.0 | 🛡️ **Cloud-Native Web Application Firewall (WAF)**. NGINX-based with ModSecurity integration, automated configuration for Docker/Kubernetes container labels. |
+| [<img src="https://img.shields.io/github/stars/suricata/suricata?style=social&color=white" alt="Suricata Stars" />](https://github.com/suricata/suricata/stargazers) | **[Suricata](https://github.com/suricata/suricata)** | GPL-2.0 | ⚡ **High-performance Network IDS, IPS, and Network Security Monitoring engine**. Open-source standard for deep packet inspection. |
+| [<img src="https://img.shields.io/github/stars/opnsense/core?style=social&color=white" alt="OPNsense Stars" />](https://github.com/opnsense/core/stargazers) | **[OPNsense](https://github.com/opnsense/core)** | BSD-2-Clause | 🏰 **Leading modern open-source firewall distribution**. FreeBSD-based with REST API, ZFS boot environments, WireGuard/OpenVPN, and Suricata IPS. |
+| [<img src="https://img.shields.io/github/stars/openwrt/openwrt?style=social&color=white" alt="OpenWrt Stars" />](https://github.com/openwrt/openwrt/stargazers) | **[OpenWrt](https://github.com/openwrt/openwrt)** | GPL-2.0 | 🌐 **Linux operating system targeting embedded network devices and cloud routers**. Extensible firewall (fw4/nftables) and packet filtering. |
+| [<img src="https://img.shields.io/github/stars/corazawaf/coraza?style=social&color=white" alt="OWASP Coraza Stars" />](https://github.com/corazawaf/coraza/stargazers) | **[OWASP Coraza](https://github.com/corazawaf/coraza)** | Apache-2.0 | 🚀 **Modern Enterprise WAF written in Go**. 100% compatible with OWASP Core Rule Set v4, built for Kubernetes and Envoy proxies. |
+| [<img src="https://img.shields.io/github/stars/vyos/vyos-1x?style=social&color=white" alt="VyOS Stars" />](https://github.com/vyos/vyos-1x/stargazers) | **[VyOS](https://github.com/vyos/vyos-1x)** | GPL-2.0 | 🔌 **Open-source network operating system** providing software-based routing, stateful firewall, VPN, and NAT for cloud hosts. |
+| [<img src="https://img.shields.io/github/stars/pfsense/pfsense?style=social&color=white" alt="pfSense Stars" />](https://github.com/pfsense/pfsense/stargazers) | **[pfSense](https://github.com/pfsense/pfsense)** | Apache-2.0 | 🏛️ **Widely deployed open-source firewall distribution**. FreeBSD-based stateful packet filtering web GUI with Snort/Suricata support. |
+| [<img src="https://img.shields.io/github/stars/owasp-modsecurity/ModSecurity?style=social&color=white" alt="ModSecurity Stars" />](https://github.com/owasp-modsecurity/ModSecurity/stargazers) | **[ModSecurity](https://github.com/owasp-modsecurity/ModSecurity)** | Apache-2.0 | 🔑 **Classic open-source WAF engine**. Operates as a module for Nginx, Apache HTTPd, and IIS with OWASP CRS support. |
+| [<img src="https://img.shields.io/github/stars/polycube-network/polycube?style=social&color=white" alt="Polycube Stars" />](https://github.com/polycube-network/polycube/stargazers) | **[Polycube](https://github.com/polycube-network/polycube)** | Apache-2.0 | ⚡ **eBPF & XDP network service framework**. Includes `pcn-iptables` for high-throughput eBPF packet filtering with hash-table rule lookup. |
+| [<img src="https://img.shields.io/github/stars/moolen/neuwerk?style=social&color=white" alt="neuwerk Stars" />](https://github.com/moolen/neuwerk/stargazers) | **[neuwerk](https://github.com/moolen/neuwerk)** | MIT | ☁️ **Cloud-native eBPF network egress firewall**. Dynamic DNS-based allow/deny egress traffic filtering with Raft distributed consensus. |
+| [<img src="https://img.shields.io/github/stars/xdp-project/xdp-tools?style=social&color=white" alt="xdp-filter Stars" />](https://github.com/xdp-project/xdp-tools/stargazers) | **[xdp-filter (xdp-tools)](https://github.com/xdp-project/xdp-tools)** | GPL-2.0 / LGPL-2.1 | 🏎️ **XDP-based high-speed packet filtering engine**. Hash-table rule lookup maintaining low latency for IPv4/IPv6 packet dropping. |
+| [<img src="https://img.shields.io/github/stars/ipfire/ipfire-2.x?style=social&color=white" alt="IPFire Stars" />](https://github.com/ipfire/ipfire-2.x/stargazers) | **[IPFire](https://github.com/ipfire/ipfire-2.x)** | GPL-3.0 | 🔒 **Security-focused Linux firewall distribution**. Color-coded network zones (Green/Red/Blue/Orange) with built-in Pakfire package manager. |
+| [<img src="https://img.shields.io/github/stars/metal-stack/firewall-controller?style=social&color=white" alt="metal-stack firewall Stars" />](https://github.com/metal-stack/firewall-controller/stargazers) | **[metal-stack firewall-controller](https://github.com/metal-stack/firewall-controller)** | MIT | ☸️ **Kubernetes controller for bare-metal firewalls**. Configures nftables and Suricata IDS dynamically based on CRDs. |
+| [<img src="https://img.shields.io/github/stars/GizmoTickler/fos1?style=social&color=white" alt="fos1 Stars" />](https://github.com/GizmoTickler/fos1/stargazers) | **[fos1](https://github.com/GizmoTickler/fos1)** | MIT | ☸️ **Kubernetes-based router & firewall distribution on Talos Linux**. Includes eBPF packet processing, Suricata IDS, and Zeek DPI. |
+| [<img src="https://img.shields.io/github/stars/fire833/morfic?style=social&color=white" alt="morfic Stars" />](https://github.com/fire833/morfic/stargazers) | **[morfic](https://github.com/fire833/morfic)** | Open-Source | ☸️ **Kubernetes-native firewall/routing control plane** for managing network policies across user and kernel space. |
+
+---
+
+## 🤝 How to Contribute
+
+1. 🍴 **Fork** the repository.
+2. 📝 **Add or edit** entries in `README.md` following the tabular markdown format.
+3. ℹ️ **Provide essential details**: name, repository/website link, 1–2 sentence description, license, pricing, or star count.
+4. 🚀 **Submit a Pull Request (PR)** with a clear explanation of your additions.
+
+---
+
+## ⚠️ Disclaimer
+
+- ℹ️ This is a **community-curated list** for informational and educational purposes.
+- 🛡️ Cloud network firewalls process sensitive production network traffic. Self-hosted and open-source solutions require proper security hardening, active patch management, and strict access controls.
+- ⚡ **eBPF firewalls performance**: eBPF/XDP throughput depends on rule lookup algorithms (hash-table vs linear search).
+- 🔐 **Management security**: Never expose firewall management consoles or admin interfaces directly to the public internet. Use secure VPNs, Zero-Trust Access, or SSH bastions.
+
+---
+
+<p align="center">
+  <b>Made for network engineers, cloud architects, and devsecops teams seeking cloud firewall clarity.</b><br/>
+  <i>Star ⭐ this repository if you find it helpful!</i>
+</p>
